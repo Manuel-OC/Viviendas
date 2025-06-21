@@ -15,7 +15,7 @@ def crear_driver():
 	options.add_argument("--disable-dev-shm-usage")
 	options.add_argument("--window-size=1920,1080")
 	options.add_argument("--lang=es-ES")
-	options.headless = False  # <-- Modo visible para depurar
+	options.headless = True  # <-- Modo visible para depurar
 	options.add_argument("user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/117.0.0.0 Safari/537.36")
 	options.add_argument("--disable-blink-features=AutomationControlled")
 	driver = uc.Chrome(options=options, use_subprocess=True)
