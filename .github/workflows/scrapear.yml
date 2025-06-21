@@ -24,4 +24,4 @@ jobs:
           pip install -r requirements.txt
 
       - name: Ejecutar script scraper
-        run: python3 scraper.py
+        run: xvfb-run python3 scraper.py
